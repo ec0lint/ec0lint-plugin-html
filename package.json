@@ -1,37 +1,48 @@
 {
-  "name": "@html-eslint/html-eslint",
-  "version": "0.4.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "lerna run test --stream",
-    "lint": "eslint . --ext .js",
-    "format": "prettier --write .",
-    "check:ts": "lerna run check:ts",
-    "check:format": "prettier --list-different .",
-    "bootstrap": "lerna bootstrap",
-    "test:all": "npm run check:ts && npm run check:format && npm run lint && npm run test"
-  },
-  "author": "yeonjuan",
+  "name": "html-ec0lint",
+  "version": "0.0.1",
+  "description": "Ec0lint plugin for html",
+  "author": "ec0lint",
+  "homepage": "https://github.com/ec0lint#readme",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-jest": "^24.1.3",
-    "eslint-plugin-node": "^11.1.0",
-    "gh-pages": "^3.1.0",
-    "husky": "^4.3.0",
-    "jest": "^27.3.1",
-    "lerna": "^4.0.0",
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "check:ts": "tsc"
   },
   "engines": {
     "node": ">=8.10.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run check:format",
-      "pre-push": "npm run test && npm run check:format"
-    }
+  "keywords": [
+    "ec0lint",
+    "ec0lintplugin",
+    "ec0lint-plugin",
+    "eslint",
+    "html",
+    "formatter",
+    "lint",
+    "accessibility"
+  ],
+  "devDependencies": {
+    "@html-eslint/parser": "^0.15.0",
+    "@types/eslint": "^7.2.10",
+    "@types/estree": "^0.0.47",
+    "eslint": "8.26.0",
+    "ec0lint": "^1.0.0",
+    "es-html-parser": "^0.0.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "jest": "^29.2.2"
   }
 }

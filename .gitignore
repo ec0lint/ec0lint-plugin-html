@@ -1,4 +1,7 @@
 node_modules/
-**/coverage
-website/build
-website/static/js/playground
+coverage
+.eslintcache
+yarn.lock
+.idea
+.ec0lintcache
+.vscode
