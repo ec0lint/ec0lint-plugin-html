@@ -18,8 +18,12 @@
   },
   "scripts": {
     "test": "jest --coverage",
+    "format": "prettier --write .",
+    "check:format": "prettier --list-different .",
+    "lint": "eslint . --ext .js",
+    "bootstrap": "lerna bootstrap",
     "check:ts": "tsc",
-    "test:all": "npm run check:ts && npm run test"
+    "test:all": "npm run check:ts && npm run check:format && npm run lint && npm run test"
   },
   "engines": {
     "node": ">=8.10.0"
