@@ -69,9 +69,9 @@ Let's build an eco-friendly website!
 
 - :hammer: Video format (lighter-video-files, ec0lint-plugin-react)
 - :hammer: Video format (lighter-video-files, ec0lint)
-- :hammer: Plugin HTML (ec0lint-plugin-html)
+- :ballot_box_with_check: Plugin HTML (ec0lint-plugin-html)
 - :hammer: Lazy loading (require-lazy-loading, ec0lint-style)
-- :hammer: Lazy loading (require-lazy-loading, ec0lint-plugin-html)
+- :ballot_box_with_check: Lazy loading (require-lazy-loading, ec0lint-plugin-html)
 - :hammer: Lazy loading (require-lazy-loading, ec0lint-plugin-react)
 - :four_leaf_clover: Font source (no-hosted-online-fonts, ec0lint-style)
 - :hammer: Light libraries – jQuery Animate Toggle (no-animate-toggle, ec0lint)
