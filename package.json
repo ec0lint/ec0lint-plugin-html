@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Ec0lint plugin for html",
   "author": "ec0lint",
-  "homepage": "https://github.com/ec0lint#readme",
+  "homepage": "https://ec0lint.com/",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {

@@ -29,7 +29,7 @@ ruleTester.run("lazy-load", rule, {
       code: `<video class="none"> </video>`,
       errors: [
         {
-          message: "You should consider using lazy-loading for this file.",
+          message: "Lazy loading can be used for this file.",
         },
       ],
     },
@@ -37,7 +37,7 @@ ruleTester.run("lazy-load", rule, {
       code: `<video preload="auto"> </video>`,
       errors: [
         {
-          message: "You should consider using lazy-loading for this file.",
+          message: "Lazy loading can be used for this file.",
         },
       ],
     },
@@ -45,7 +45,7 @@ ruleTester.run("lazy-load", rule, {
       code: `<img src="img.jpg"> </img>`,
       errors: [
         {
-          message: "You should consider using lazy-loading for this file.",
+          message: "Lazy loading can be used for img.jpg.",
         },
       ],
     },
@@ -53,7 +53,7 @@ ruleTester.run("lazy-load", rule, {
       code: `<iframe data-src="img.jpg" class="none"> </iframe>`,
       errors: [
         {
-          message: "You should consider using lazy-loading for this file.",
+          message: "Lazy loading can be used for img.jpg.",
         },
       ],
     },

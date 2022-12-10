@@ -7,17 +7,21 @@ title: "html-ec0lint/lazy-load"
 
 ### Rule Details
 
-Lazy loading loads heavy elements of a website (usually an image or a video) only when needed. 
+Lazy loading loads heavy elements of a website, like an image or a video, only when they're needed. 
 For example, images or videos further down on a website are only loaded if the user scrolls down. 
 With lazy loading, less data needs to be transferred and thus less energy is consumed.
 
 ### CO2 reduction
 
-By using lazy loading, we provide that no unnecessary images and videos will be transferred, 
-so for the file that won't be displayed by website user, we limit CO2 emissions connected with loading this 
+By using lazy loading no unnecessary images and videos will be transferred. 
+For the file that isn't displayed by a website user, we reduce CO2 emissions related to loading the 
 file to 0g.
-By multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh) , the carbon footprint of the average image file (3 MB) sums up to 8.59 g. 
-So, by lazy loading this file we could get 8.59g CO2 reduction (100% less CO2).
+
+To calculate the combined carbon footprint of all image files on an average website (1000 kB), we multiply the file sizes by the end-user traffic (0.81 kWh/1 GB) and by the energy emissions (442 g/kWh), which sums up to 0.36 g.
+
+So, by enabling lazy loading of these files, we could get 0.36 CO2 reduction (100% less CO2).
+
+In the case of video files (on average 3472 kB per website), we get 1.25 g CO2 reduction.
 
 Examples of **incorrect** code for this rule:
 
