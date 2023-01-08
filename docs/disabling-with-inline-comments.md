@@ -10,30 +10,30 @@ To disable rule in a file, use HTML comments (`<!-- ... -->`) in the following f
 * Disable all rules in an entire file:
 
 ```html
-<!-- eslint-disable -->
+<!-- ec0lint-disable -->
 <div foo="foo" foo="foo"></div>
 ```
 
 * Disable or enable specific rules in an entire file:
 
 ```html
-<!-- eslint-disable @html-eslint/no-duplicate-attrs -->
+<!-- ec0lint-disable html-ec0lint/lazy-load -->
 <div foo="foo" foo="foo"></div>
 
-<!-- eslint-enable @html-eslint/no-duplicate-attrs  -->
+<!-- eslint-enable html-ec0lint/lazy-load  -->
 <div foo="foo" foo="foo"></div>
 ```
 
 * Disable all rules on a specific line:
 
 ```html
-<!-- eslint-disable-next-line -->
+<!-- ec0lint-disable-next-line -->
 <div foo="foo" foo="foo"></div>
 ```
 
 * Disable a specific rule on a specific line:
 
 ```html
-<!-- eslint-disable-next-line @html-eslint/no-duplicate-attrs -->
+<!-- ec0lint-disable-next-line html-ec0lint/lazy-load -->
 <div foo="foo" foo="foo"></div>
 ```
