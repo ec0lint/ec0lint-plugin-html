@@ -1,6 +1,6 @@
 const createRuleTester = require("../rule-tester");
 const rule = require("../../lib/rules/lazy-load");
-const calculateCO2LazyLoadReduction = require('../../scripts/co2-module');
+const calculateCO2LazyLoadReduction = require("../../scripts/co2-module");
 
 const ruleTester = createRuleTester();
 
@@ -46,8 +46,11 @@ ruleTester.run("lazy-load", rule, {
       code: `<img src="lib/testResources/img.jpg"> </img>`,
       errors: [
         {
-          message: `Lazy loading can be used for lib/testResources/img.jpg. ` +
-          `Estimated CO2 reduction that you can achieve is: ${calculateCO2LazyLoadReduction("lib/testResources/img.jpg").toFixed(2)}g`,
+          message:
+            `Lazy loading can be used for lib/testResources/img.jpg. ` +
+            `Estimated CO2 reduction that you can achieve is: ${calculateCO2LazyLoadReduction(
+              "lib/testResources/img.jpg"
+            ).toFixed(2)}g`,
         },
       ],
     },
@@ -55,8 +58,11 @@ ruleTester.run("lazy-load", rule, {
       code: `<iframe data-src="lib/testResources/img.jpg" class="none"> </iframe>`,
       errors: [
         {
-          message: `Lazy loading can be used for lib/testResources/img.jpg. ` +
-          `Estimated CO2 reduction that you can achieve is: ${calculateCO2LazyLoadReduction("lib/testResources/img.jpg").toFixed(2)}g`,
+          message:
+            `Lazy loading can be used for lib/testResources/img.jpg. ` +
+            `Estimated CO2 reduction that you can achieve is: ${calculateCO2LazyLoadReduction(
+              "lib/testResources/img.jpg"
+            ).toFixed(2)}g`,
         },
       ],
     },
