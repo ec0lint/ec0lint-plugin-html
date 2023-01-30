@@ -1,6 +1,6 @@
 {
   "name": "html-ec0lint",
-  "version": "0.0.1",
+  "version": "2.1.0",
   "description": "Ec0lint plugin for html",
   "author": "ec0lint",
   "homepage": "https://ec0lint.com/",
@@ -42,7 +42,7 @@
     "@html-eslint/parser": "^0.15.0",
     "@types/eslint": "^7.2.10",
     "@types/estree": "^0.0.47",
-    "ec0lint": "^1.0.0",
+    "ec0lint": "^2.1.0",
     "es-html-parser": "^0.0.8",
     "eslint": "8.26.0",
     "eslint-plugin-jest": "^27.1.5",
