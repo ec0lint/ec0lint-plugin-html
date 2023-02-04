@@ -62,7 +62,6 @@ Split your terminal and run:
 
 Let's build an eco-friendly website!
 
-
 # Release plan
 
 :white_check_mark: v1.0.0 - June - MVP
