@@ -26,6 +26,8 @@ The tool is customized and each rule applied during the analysis can be adjusted
 
 Make sure you have Node installed
 
+(a) If your code contains CSS files
+
 Download ec0lint:
 
 `npm i ec0lint ec0lint-style ec0lint-style-config-recommended`
@@ -42,8 +44,23 @@ Split your terminal and run:
 
 `npx ec0lint-style "**/*.css" npx ec0lint .`
 
-Let's build an eco-friendly website!
+(b) If your code contains LESS, SASS/SCSS files
 
+`npm i ec0lint ec0lint-style ec0lint-style-config-recommended-scss`
+
+Configure your project:
+
+`npm init @ec0lint/config`
+
+Create a .ec0lint-stylerc.json configuration file in the root of your project with the following content:
+
+`{ "extends": "ec0lint-style-config-recommended-scss" } `
+
+Split your terminal and run:
+
+`npx ec0lint-style "**/*.scss" npx ec0lint .`
+
+Let's build an eco-friendly website!
 
 # Release plan
 
