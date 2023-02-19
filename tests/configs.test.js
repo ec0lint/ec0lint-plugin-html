@@ -53,7 +53,7 @@ describe("configs", () => {
       .filter(([, rule]) => {
         return rule.meta.docs.recommended;
       })
-      .map(([name]) => `html-ec0lint/${name}`);
+      .map(([name]) => `ec0lint-plugin-html/${name}`);
     expect(Object.keys(RECOMMENDED_CONFIG.rules)).toEqual(
       expect.arrayContaining(recommendedRules)
     );

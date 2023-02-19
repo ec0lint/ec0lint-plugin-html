@@ -1,5 +1,5 @@
 {
-  "name": "html-ec0lint",
+  "name": "ec0lint-plugin-html",
   "version": "2.1.0",
   "description": "Ec0lint plugin for html",
   "author": "ec0lint",

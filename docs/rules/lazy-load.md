@@ -1,6 +1,6 @@
 ---
 id: lazy-load
-title: "html-ec0lint/lazy-load"
+title: "ec0lint-plugin-html-/lazy-load"
 ---
 
 ## Suggest to use lazy loading for image and video files

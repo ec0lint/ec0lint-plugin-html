@@ -6,7 +6,7 @@ title: Getting Started
 ## Installation
 
 ```
-$ npm install --save-dev ec0lint @html-eslint/parser html-ec0lint
+$ npm install --save-dev ec0lint @html-eslint/parser ec0lint-plugin-html
 ```
 
 - Requires Node.js `>=8.10.0`.
@@ -21,12 +21,12 @@ We can apply these [plugin rules](#Rules) to only HTML files(`*.html`) by using 
 ```js
 module.exports = {
   //...
-  plugins: ["html-ec0lint"],
+  plugins: ["html"],
   overrides: [
     {
       files: ["*.html"],
       parser: "@html-eslint/parser",
-      extends: ["plugin:html-ec0lint/recommended"],
+      extends: ["plugin:html/recommended"],
     },
   ],
 };
@@ -34,4 +34,4 @@ module.exports = {
 
 ## Recommended Configs
 
-This plugin provides `plugin:@html-ec0lint/recommended`. The recommended configuration contains the rules marked ⭐ in [Rules](#Rules).
+This plugin provides `plugin:html/recommended`. The recommended configuration contains the rules marked ⭐ in [Rules](#Rules).
