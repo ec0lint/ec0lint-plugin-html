@@ -17,10 +17,10 @@ To disable rule in a file, use HTML comments (`<!-- ... -->`) in the following f
 * Disable or enable specific rules in an entire file:
 
 ```html
-<!-- ec0lint-disable html-ec0lint/lazy-load -->
+<!-- ec0lint-disable ec0lint-plugin-html/lazy-load -->
 <div foo="foo" foo="foo"></div>
 
-<!-- eslint-enable html-ec0lint/lazy-load  -->
+<!-- eslint-enable ec0lint-plugin-html/lazy-load  -->
 <div foo="foo" foo="foo"></div>
 ```
 
@@ -34,6 +34,6 @@ To disable rule in a file, use HTML comments (`<!-- ... -->`) in the following f
 * Disable a specific rule on a specific line:
 
 ```html
-<!-- ec0lint-disable-next-line html-ec0lint/lazy-load -->
+<!-- ec0lint-disable-next-line ec0lint-plugin-html/lazy-load -->
 <div foo="foo" foo="foo"></div>
 ```
